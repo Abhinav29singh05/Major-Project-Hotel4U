@@ -39,7 +39,7 @@ router.route("/:id")
     );
 
 // edit route
-router.get("/:id/edit",isLoggedIn,isOwner,wrapAsync(listingController.renderEditForm));
+router.get("/:id/edit",isLoggedIn,wrapAsync(listingController.renderEditForm));
  
 
 
