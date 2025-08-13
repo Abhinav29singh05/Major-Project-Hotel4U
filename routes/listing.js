@@ -35,7 +35,7 @@ router.route("/:id")
         validateListing,
         wrapAsync(listingController.updateListing)
     )
-    .delete(isLoggedIn,isOwner,wrapAsync(listingController.destroyListing)
+    .delete(isLoggedIn,wrapAsync(listingController.destroyListing)
     );
 
 // edit route
